@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.core.database import get_db
-from app.api.v1.suppliers.supplier_schemas import SupplierCreate, SupplierUpdate, SupplierOut
-from app.api.v1.suppliers.supplier_service import (
+from core.database import get_db
+from api.v1.suppliers.supplier_schemas import SupplierCreate, SupplierUpdate, SupplierOut
+from api.v1.suppliers.supplier_service import (
     get_all_suppliers,
     get_supplier,
     create_supplier as service_create_supplier,

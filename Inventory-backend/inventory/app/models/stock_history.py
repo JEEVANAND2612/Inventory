@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey
 from sqlalchemy.sql import func
-from app.core.database import Base
+from core.database import Base
 
 class StockHistory(Base):
     __tablename__ = "stock_history"

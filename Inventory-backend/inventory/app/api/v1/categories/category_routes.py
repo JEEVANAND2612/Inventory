@@ -2,14 +2,14 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.api.deps import get_db
-from app.api.v1.categories import category_service
-from app.api.v1.categories.category_schemas import (
+from api.deps import get_db
+from api.v1.categories import category_service
+from api.v1.categories.category_schemas import (
     CategoryCreate,
     CategoryUpdate,
     CategoryOut,
 )
-from app.models.category import Category
+from models.category import Category
 
 router = APIRouter(
     prefix="/categories",

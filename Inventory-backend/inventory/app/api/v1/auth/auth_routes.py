@@ -4,15 +4,15 @@ from jose import jwt, JWTError
 from uuid import uuid4
 
 
-from app.api.deps import get_db , get_current_user
-from app.models.user import User
-from app.api.v1.auth.auth_schemas import SignupRequest, LoginRequest
-from app.api.v1.auth.auth_service import (
+from api.deps import get_db , get_current_user
+from models.user import User
+from api.v1.auth.auth_schemas import SignupRequest, LoginRequest
+from api.v1.auth.auth_service import (
     hash_password,
     verify_password,
     create_access_token,
 )
-from app.core.config import settings
+from core.config import settings
 
 router = APIRouter(prefix="/auth", tags=["Auth"])
 COOKIE_NAME = "access_token"

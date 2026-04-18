@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from app.models.warehouse import Warehouse as WarehouseModel
-from app.api.v1.warehouses.warehouse_schemas import (
+from models.warehouse import Warehouse as WarehouseModel
+from api.v1.warehouses.warehouse_schemas import (
     WarehouseCreate,
     WarehouseUpdate,
 )

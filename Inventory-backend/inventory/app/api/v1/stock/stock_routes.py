@@ -2,10 +2,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.core.database import get_db
-from app.models.stock import StockItem
-from app.models.stock_history import StockHistory
-from app.schemas.stock import StockItemCreate, StockItemUpdate, StockItemResponse
+from core.database import get_db
+from models.stock import StockItem
+from models.stock_history import StockHistory
+from schemas.stock import StockItemCreate, StockItemUpdate, StockItemResponse
 
 router = APIRouter(prefix="/stock", tags=["Stock"])
 

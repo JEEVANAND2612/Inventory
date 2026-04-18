@@ -1,6 +1,6 @@
 import uuid
 from sqlalchemy import Column, String
-from app.core.database import Base
+from core.database import Base
 
 class Warehouse(Base):
     __tablename__ = "warehouses"

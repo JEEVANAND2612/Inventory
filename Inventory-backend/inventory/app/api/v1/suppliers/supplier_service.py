@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from app.models.supplier import Supplier
-from app.api.v1.suppliers.supplier_schemas import SupplierCreate, SupplierUpdate
+from models.supplier import Supplier
+from api.v1.suppliers.supplier_schemas import SupplierCreate, SupplierUpdate
 
 # 🔹 Get all suppliers
 def get_all_suppliers(db: Session):

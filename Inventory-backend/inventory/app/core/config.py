@@ -1,4 +1,6 @@
 from pydantic_settings import BaseSettings
+from dotenv import load_dotenv
+import os
 
 class Settings(BaseSettings):
     DATABASE_URL: str
@@ -9,4 +11,8 @@ class Settings(BaseSettings):
         env_file = ".env"
         extra = "ignore"
 
-settings = Settings()
+load_dotenv()
+
+db = os.getenv("DATABASE_URL")
+
+settings = Settings(db)

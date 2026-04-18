@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.core.database import get_db
-from app.api.v1.warehouses import warehouse_service
-from app.api.v1.warehouses.warehouse_schemas import (
+from core.database import get_db
+from api.v1.warehouses import warehouse_service
+from api.v1.warehouses.warehouse_schemas import (
     WarehouseCreate,
     WarehouseUpdate,
     WarehouseRead,

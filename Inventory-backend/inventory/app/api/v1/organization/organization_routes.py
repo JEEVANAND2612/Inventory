@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from app.core.database import get_db
-from app.models.organization import Organization as OrgModel
+from core.database import get_db
+from models.organization import Organization as OrgModel
 from pydantic import BaseModel
 
 router = APIRouter(prefix="/organization", tags=["Organization"])

@@ -2,8 +2,8 @@ from fastapi import Request, HTTPException, status, Depends
 from sqlalchemy.orm import Session
 from jose import jwt, JWTError
 
-from app.core.database import SessionLocal
-from app.core.config import settings
+from core.database import SessionLocal
+from core.config import settings
 
 COOKIE_NAME = "access_token"
 
